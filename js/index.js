@@ -5,7 +5,7 @@ const ct=document.querySelector(".content")
 const money=document.querySelector("h1 span")
 const input=document.querySelector("#enterMoney")
 btn.addEventListener('click',play)
-function play(){
+function rd(){
     let tong =0
     for(i=0;i<random.length;i++){
         random[i].value=Math.floor(Math.random()*(6))+1
@@ -35,4 +35,7 @@ function play(){
             money.innerHTML=Number(money.innerHTML)-Number(input.value)
         }
     }
+}
+function play(){
+    const run=setTimeout(rd,2000)
 }
